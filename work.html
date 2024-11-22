@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #000;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1152px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .logo-img {
+            width: 7rem;
+            aspect-ratio: auto;
+            mix-blend-mode: difference;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3.5rem;
+        }
+
+        .nav-links a {
+            font-size: 1.1rem;
+            color: #888;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #fff;
+        }
+
+        .talk-btn {
+            font-size: 1.1rem;
+            background-color: #333;
+            color: #fff;
+            padding: 0.7rem 1.5rem;
+            border-radius: 1.2rem;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .let-talk-btn:hover {
+            background-color: #444;
+        }
+
+        /* Main Content */
+
+        .title {
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .project-card {
+            background: #111;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .project-image {
+            aspect-ratio: 4/3;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover .project-image {
+            transform: scale(1.05);
+        }
+
+        .project-info {
+            padding: 24px;
+        }
+
+        .project-category {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .project-title-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .project-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .arrow-icon {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .project-card:hover .arrow-icon {
+            opacity: 1;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            padding: 64px 0 32px;
+            color: #888;
+            text-align: center;
+            /* Ensure all elements in the footer are centered */
+        }
+
+        footer p {
+            margin-bottom: 16px;
+            /* Add spacing between text and links */
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            /* Center the links horizontally */
+            gap: 32px;
+            /* Add spacing between links */
+            flex-wrap: wrap;
+            /* Ensure responsiveness */
+        }
+
+        .footer-links a {
+            color: #888;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .title {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- menu  -->
+        <nav>
+            <div class="logo">
+                <img class="logo-img" src="./img/Logo.jpg" />
+            </div>
+            <div class="nav-links">
+                <a href="./home.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./work.html">Works</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <a href="./contact.html" class="talk-btn">Let's talk</a>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main">
+            <h1 class="title fade-in" style="animation-delay: 0.7s">✨ ALL PROJECTS ✨</h1>
+
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be dynamically inserted here -->
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-20 pb-8 px-6">
+            <div class="max-w-6xl mx-auto text-center fade-in" style="animation-delay: 1.4s">
+                <p class="text-gray-500">
+                    © 2024 All rights reserved to
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"
+                        style="font-weight: bold; color: #888;" onmouseover="this.style.color='white';"
+                        onmouseout="this.style.color='grey';">Pathik Singh</a>
+                </p>
+                <div class="footer-links">
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors">HOME</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors">ABOUT</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors">WORKS</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors">CONTACT</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        // Project data
+        const projects = [
+            {
+                title: "Logo Design",
+                category: "GRAPHIC DESIGNING",
+                image: "./img/logodesign.jpg",
+                delay: "0.8s"
+            },
+            {
+                title: "Mockup Design",
+                category: "MOCKUPS",
+                image: "./img/illustration.jpg",
+                delay: "0.9s"
+            },
+            {
+                title: "Product Design 1",
+                category: "PRODUCT DESIGNING",
+                image: "./img/product design.jpg",
+                delay: "1.0s"
+            },
+            {
+                title: "Product Design 2",
+                category: "PRODUCT DESIGNING",
+                image: "./img/product design2.jpg",
+                delay: "1.1s"
+            },
+            {
+                title: "DivyaBhav",
+                category: "WEB DESIGNING",
+                image: "./img/webdesign.png",
+                delay: "1.2s"
+            },
+            {
+                title: "PHOTO",
+                category: "PHOTOGRAPHY",
+                image: "./img/photography.jpg",
+                delay: "1.3s"
+            }
+        ];
+
+        // Generate project cards
+        const projectsGrid = document.getElementById('projectsGrid');
+
+        projects.forEach(project => {
+            const projectCard = `
+                <div class="project-card fade-in" style="animation-delay: ${project.delay}">
+                    <img src="${project.image}" alt="${project.title}" class="project-image">
+                    <div class="project-info">
+                        <div class="project-category">${project.category}</div>
+                        <div class="project-title-wrapper">
+                            <div class="project-title">${project.title}</div>
+                            <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            `;
+            projectsGrid.insertAdjacentHTML('beforeend', projectCard);
+        });
+    </script>
+</body>
+
+</html>

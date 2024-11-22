@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0b0b0d;
+    color: #fff;
+}
+
+/* Header */
+header {
+    max-width: 1000px; /* Matches main content width */
+    padding: 20px 20px; /* Padding within the header */
+    margin: 0 auto; /* Center the header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b0b0d;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.top-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-nav ul li a.active {
+    color: #00aaff;
+}
+
+.btn-talk {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Main Content Layout */
+main {
+    max-width: 1200px;
+    padding: 8px 100px; /* Padding for top/bottom and left/right */
+    margin: 40px auto; /* Center the content with spacing from top/bottom */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact {
+    display: flex;
+    gap: 60px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Contact Info */
+.contact-info {
+    width: 35%;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #888;
+}
+
+.contact-info .info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.contact-info .info-item i {
+    font-size: 24px;
+    color: #00aaff;
+}
+
+.contact-info .social-info {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.contact-info .social-info a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info .social-info a:hover {
+    color: #00aaff;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 55%;
+    background: linear-gradient(135deg, #a69ea5, #1c1c1c);
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(80, 80, 4, 0.312);
+}
+
+.contact-form h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.contact-form .highlight {
+    color: #00aaff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #222;
+    border: 1px solid #444;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.contact-form .btn-submit {
+    background-color: #00aaff;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    max-width: 1200px;
+    padding: 30px 60px;
+    margin: 0 auto; /* Center the footer */
+    background-color: #0b0b0d;
+    color: #9E9E9E;
+}
+
+.footer-nav {
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-nav nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.footer-nav ul li a {
+    color: #868484b0;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 16px;
+}
+
+.footer-nav ul li a:hover {
+    color: #ffffff;
+    
+}
+
+.footer-nav p {
+    color: #9E9E9E;
+    font-size: 16px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./img/Logo.jpg" alt="Logo" style="width: 100px;"></div>
+    
+        <nav class="top-nav">
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./work.html">Works</a></li>
+                <li><a href="./contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="./service.html"><button class="btn-talk">Let's Talk</button></a>
+    </header>
+    
+    <main>
+        <section class="contact">
+            <div class="contact-info">
+                <h2>CONTACT INFO</h2>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p><strong>Mail Us</strong></p>
+                        <p>contact@pathiksingh.me</p>
+                        <p>info@pathiksingh.me</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <p><strong>Contact Us</strong></p>
+                        <p>+91 639-391-0833</p>
+                        <p>+91 987-241-0833</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <p><strong>Location</strong></p>
+                        <p>Law-Gate, Phagwara, Punjab, India, 14411</p>
+                    </div>
+                </div>
+                <div class="social-info">
+            
+                    
+                    <a href="https://dribbble.com/"><i class="fab fa-dribbble"></i></a>
+                    <a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fab fa-instagram"></i></a>
+                
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Let's work <span class="highlight">together</span>.</h2>
+                <form action="submit.php" method="post">
+                    <input type="text" name="name" placeholder="Name *" required>
+                    <input type="email" name="email" placeholder="Email *" required>
+                    <input type="text" name="subject" placeholder="Your Subject *" required>
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-nav">
+            <p>&copy; All rights reserved to <a href="#" style="color: grey; font-weight: bold;" onmouseover="this.style.color='white';" onmouseout="this.style.color='grey';">Pathik Singh</a></p>
+
+            <nav>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./work.html">Works</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        // Optional: Add form validation or dynamic effects here
+
+document.querySelector('.btn-submit').addEventListener('click', function (e) {
+    // Prevent the form from submitting if needed
+    e.preventDefault();
+    alert('Message sent!');
+});
+    </script>
+</body>
+</html>
